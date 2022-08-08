@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    tr {
+        td.lbl {
+            width: 10%;
+        }
+        td.in-op {
+            width: 90%;
+            text-align: left;
+        }
+        textarea {
+            width: 49%;
+        }
+    }
+}

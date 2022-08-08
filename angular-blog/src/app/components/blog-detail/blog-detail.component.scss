@@ -1,0 +1,50 @@
+.main-blog {
+    .all-blogs {
+        text-align: left;
+        .title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .description {
+            font-size: 12px;
+            padding: 4px;
+        }
+        .content {
+            font-size: 14px;
+            padding: 8px;
+        }
+        .operation {
+            text-align: right;
+        }
+        .comments {
+            background: #e1e1e1;
+            padding: 8px;
+        }
+        .comment-lbl {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .add-comment-button {
+            text-align: right;
+        }
+    }
+    .add-comment {
+        display: none;
+    }
+}
+table {
+    width: 100%;
+    tr {
+        td.lbl {
+            width: 10%;
+        }
+        td.in-op {
+            width: 90%;
+            text-align: left;
+        }
+        textarea {
+            width: 49%;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    //background: red;
+    // background: url("./assets/chart-print.jpeg"); 
+    background: url("./assets/bac.jpeg"); 
+  }
+
+  button.modified {
+    border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #e7e7e7;
+  color: black;
+  }

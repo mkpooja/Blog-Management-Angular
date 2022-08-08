@@ -1,0 +1,44 @@
+<h1>Blog Detail</h1>
+
+<div class="main-blog">
+    <div class="all-blogs">
+        <div class="title">{{blog?.title}}</div>
+        <div class="description">{{blog?.description}}</div>
+        <div class="content">{{blog?.content}}</div>
+        <div class="add-comment-button"><button (click)="showComment()">Add Comment</button></div>
+        <hr/>
+        <div class="comment-lbl">Comments</div>
+       
+        <hr/>
+        <div *ngIf="!!blog && blog?.comments" class="comments">
+            <div *ngFor="let comment of blog?.comments">
+                <div class="name-item"><b>Name: </b> {{comment?.name}}</div>
+                <div class="email-item"><b>Email:</b> {{comment?.email}}</div><br/>
+                <div class="body">{{comment?.body}}</div>
+                <hr />
+            </div>
+        </div>
+    </div>
+
+    <div class="add-comment">
+        <table>
+            <tr>
+                <td class="lbl">Name</td>
+                <td class="in-op"><input type="text" [(ngModel)]="name" /> </td>
+            </tr>
+            <tr>
+                <td class="lbl">email</td>
+                <td class="in-op"><input type="text" [(ngModel)]="email" /> </td>
+            </tr>
+            <tr>
+                <td class="lbl">Comment</td>
+                <td class="in-op"><textarea [(ngModel)]="content" rows="5"></textarea> </td>
+            </tr>
+            <tr>
+                <td ><button class="modified" (click)="addComment()">Submit</button></td>
+                <td ><button class="modified" (click)="cancel()">Cancel</button></td>
+            </tr>
+        </table>
+    </div>
+   
+</div>

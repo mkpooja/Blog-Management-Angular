@@ -1,0 +1,16 @@
+<h1>Search Blog</h1>
+<input type="text" placeholder="Search..." (keydown)="searchBlog()" [(ngModel)]="searchKeyWord" />
+
+<div class="main-blog">
+    <div class="all-blogs" *ngFor="let blog of searchBlogs">
+        <div class="title">{{blog?.title}}</div>
+        <div class="description">{{blog?.description}}</div>
+        <div class="content">{{blog?.content}}</div>
+        <div class="operation">
+            comment: {{blog?.comments?.length}}
+            <button (click)="getDetail(blog)">Detail</button>
+        </div>
+       
+    </div>
+   
+</div>

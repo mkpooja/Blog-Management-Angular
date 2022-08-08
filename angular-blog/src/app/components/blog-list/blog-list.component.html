@@ -1,0 +1,16 @@
+<h1>Blog List</h1>
+
+<div class="main-blog">
+    <div class="all-blogs" *ngFor="let blog of blogs">
+        <div class="title">{{blog?.title}}</div>
+        <div class="description">{{blog?.description}}</div>
+        <div class="content" (click)="getDetail(blog)">more...</div>
+        <div class="operation">
+            comment: {{blog?.comments?.length}} |
+            <button (click)="getDetail(blog)">Detail</button> |
+            <button (click)="deleteBlog(blog)">Delete</button>
+        </div>
+       
+    </div>
+   
+</div>

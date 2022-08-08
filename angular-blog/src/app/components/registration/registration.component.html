@@ -1,0 +1,26 @@
+<h1>Registration</h1>
+<div class="register-table">
+
+
+<table>
+    <tr>
+        <td class="lbl">Name</td>
+        <td class="in-op"><input type="text" [(ngModel)]="name" /></td>
+    </tr>
+    <tr>
+        <td class="lbl">UserName</td>
+        <td class="in-op"><input type="text" [(ngModel)]="username" /></td>
+    </tr>
+    <tr>
+        <td class="lbl">Email</td>
+        <td class="in-op"><input type="text" [(ngModel)]="email" /></td>
+    </tr>
+    <tr>
+        <td class="lbl">Password</td>
+        <td class="in-op"><input type="password" [(ngModel)]="password" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><button class="modified" (click)="signup()">Signup</button></td>
+    </tr>
+</table>
+</div>

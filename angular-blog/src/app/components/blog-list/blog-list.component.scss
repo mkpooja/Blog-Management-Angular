@@ -1,0 +1,24 @@
+.main-blog {
+    .all-blogs {
+        text-align: left;
+        border: 3px solid #e5e5e5;
+        padding: 10px;
+        margin: 10px;
+        .title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #858585;
+        }
+        .description {
+            font-size: 16px;
+            color: #858585;
+        }
+        .content {
+            font-size: 16px;
+            color: #858585;
+        }
+        .operation {
+            text-align: right;
+        }
+    }
+}

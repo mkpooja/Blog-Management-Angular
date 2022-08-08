@@ -1,0 +1,23 @@
+<h1>Create Blog</h1>
+<div class="create-table">
+    <table>
+        <tr>
+            <td class="lbl">Title</td>
+            <td class="in-op"><input type="text" [(ngModel)]="title" /></td>
+        </tr>
+        <tr>
+            <td class="lbl">Description</td>
+            <td class="in-op"><input type="text" [(ngModel)]="description"/></td>
+        </tr>
+        <tr>
+            <td class="lbl">Content</td>
+            <td class="in-op"><textarea [(ngModel)]="content" rows="5"> </textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="modified" (click)="createBlog()">Create</button>
+            </td>
+        </tr>
+    </table>
+    
+</div>

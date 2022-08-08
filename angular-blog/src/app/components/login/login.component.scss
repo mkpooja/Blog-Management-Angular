@@ -1,0 +1,23 @@
+.main {
+    text-align: center;
+    .item-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+            background: rgb(230, 230, 25);
+            svg {
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+    .new-user-register {
+        color: gray;
+        .sign-up {
+            color: blue;
+            cursor: pointer;
+        }
+    }
+}
+
